@@ -1,5 +1,7 @@
 local snacks = require("snacks")
 
+vim.o.swapfile = false -- yes
+
 local snacks_image_opts = {
 formats = {
     "png",
@@ -19,7 +21,7 @@ formats = {
     "pdf",
     "icns",
   },
-  force = false, 
+  force = false,
   doc = {
     enabled = true,
     inline = true,
@@ -110,3 +112,5 @@ require('markview').setup {
 		icon_provider = 'devicons'
 	}
 }
+
+require("cord").setup()
